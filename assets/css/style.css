@@ -27,8 +27,6 @@ h1 {
     font-family: "Balsamiq Sans", sans-serif;
     font-size: 375%;
     font-weight: 700;
-    margin-bottom: 275px;
-    padding-left: 475px;
 }
 
 img {
@@ -38,14 +36,12 @@ img {
 
 
 /* Games area */
-.quiz-area {
+
+.quiz-container {
     width: 800px;
     max-width: 80%;
     border-radius: 5px;
-
-}
-
-.container {
-    padding-bottom: 275px;
-    padding-left: 500px;
+    background-color: lightblue;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 4, 0.75) 1.95px 1.95px 2.6px;
 }
