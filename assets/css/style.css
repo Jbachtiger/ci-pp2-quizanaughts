@@ -74,3 +74,14 @@ img {
     font-weight: bold;
     padding: 20px;
 }
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 200px;
+}
+
+.hide {
+    display: none;
+}
