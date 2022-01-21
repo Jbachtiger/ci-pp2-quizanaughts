@@ -2,18 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Quizanaughts, a space quiz for children">
-    <meta name="keywords" content="quizanaughts, quiz, space, childrens quiz, learning">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Quizanaughts, a space quiz for children" />
+    <meta name="keywords" content="quizanaughts, quiz, space, childrens quiz, learning" />
     <meta name="author" content="John Bachtiger" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Quizanaughts</title>
 </head>
 
 <body>
-
+    <!-- Background image and title -->
+    <div id="background-image">
+        <header>
+            <h1>Quizanaughts!</h1>
+        </header>
+        <!-- Games area  -->
+        <div class="flex-container">
+            <div class="quiz-area">
+                <div id="quiz-questions" class="hide">
+                    <div id="question">Question</div>
+                    <div id="answer-buttons"></div>
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+                <!-- Score tracking area -->
+                <div class="score-tracking">
+                    <p class="scores">Correct Answers<span id="correct"> 0</span></p>
+                    <p class="scores">Correct Answers<span id="incorrect"> 0</span></p>
+                </div>
+            </div>
+            <!-- Controls area -->
+            <div class="controls">
+                <button id="start-btn" class="homepage-btn btn">Begin Quiz</button>
+                <button id="next-btn" class="quiz-btn btn hide">Next</button>
+                <button id="home-btn" class="quiz-btn btn hide">Home</button>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 
