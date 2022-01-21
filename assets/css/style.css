@@ -1,3 +1,45 @@
+/* Goolge Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+h1 {
+    font-family: "Balsamiq Sans", sans-serif;
+    font-size: 375%;
+    font-weight: 700;
+    text-align: center;
+    padding: 80px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 #background-image {
-    background-image: url('../images/space-background.jpg');
+    background-image: url('../images/space.png');
+    background-size: cover;
+    position: absolute;
+    background-position: center center;
+}
+
+.flex-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
