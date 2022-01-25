@@ -29,13 +29,15 @@ const quizQuestions = document.getElementById('quiz-questions');
 
 //Click event to start game
 startButton.addEventListener('click', startGame);
-startButton.classList.add('hide');
-
 
 // Starts game
 function startGame () {
-    
-
+    startButton.classList.add('hide');
+    howToPlayButton.classList.add('hide');
+    contactUsButton.classList.add('hide');
+    homeButton.classList.remove('hide');
+    nextButton.classList.remove('hide');
+    quizQuestions.classList.remove('hide');
 }
 
 function nextQuestion () {
