@@ -110,7 +110,7 @@ a {
     cursor: pointer;
 }
 
-.controls {
+.menu-controls {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -119,6 +119,11 @@ a {
     text-align: center;
     gap: 33px;
     padding: 75px;
+}
+
+.quiz-control {
+    text-align: center;
+    padding: 10px;
 }
 
 .hide {
