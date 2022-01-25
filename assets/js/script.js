@@ -15,3 +15,25 @@ close.addEventListener('click', () => {
 document.getElementById("contact-btn").onclick = function() {
     location.href = "contact.html";
 };
+
+// Quiz code
+
+function startGame () {
+
+}
+
+function nextQuestion () {
+
+}
+
+function selectAnswer () {
+
+}
+
+function incrementScore () {
+
+}
+
+function incrementIncorrectAnswer () {
+    
+}
