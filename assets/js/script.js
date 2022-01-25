@@ -25,6 +25,8 @@ const contactUsButton = document.getElementById('contact-btn');
 const nextButton = document.getElementById('next-btn');
 const homeButton = document.getElementById('home-btn');
 const quizQuestions = document.getElementById('quiz-questions');
+const questionElement = document.getElementById('question');
+const answerButtons = document.getElementById('answer-buttons');
 
 // Declared let variables
 let shuffledQuestions;
@@ -36,17 +38,23 @@ startButton.addEventListener('click', startGame);
 // Starts game
 function startGame() {
     startButton.classList.add('hide');
-    shuffledQuestions = quizQuestions.sort(() => Math.random() - .5);
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
     howToPlayButton.classList.add('hide');
     contactUsButton.classList.add('hide');
     homeButton.classList.remove('hide');
     nextButton.classList.remove('hide');
     quizQuestions.classList.remove('hide');
-    setNextQuestion();
+    nextQuestion();
 }
 
 function nextQuestion() {
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
+
+}
+
+function showQuestion(question) {
+    questionElement.innerText = question.question;
 
 }
 
