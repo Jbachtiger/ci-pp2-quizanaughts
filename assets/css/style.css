@@ -34,13 +34,21 @@ img {
     height: auto;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2e2e2e;
+}
+
 
 /* Games area */
 
 .quiz-container {
-    width: 500px;
-    height: 500px;
-    max-width: 80%;
+    width: 450px;
+    height: 450px;
     border-radius: 5px;
     background-color: lightblue;
     padding: 20px;
@@ -57,6 +65,7 @@ img {
 .btn {
     background-color: #C3FC95;
     border: 2px solid black;
+    border-radius: 10px;
     padding: 15px 32px;
     color: black;
     text-decoration: none;
@@ -69,17 +78,45 @@ img {
 
 #start-btn,
 #next-btn,
-#home-btn {
+#home-btn,
+.modal-btn,
+#contact-btn {
     font-size: 1.3rem;
     font-weight: bold;
     padding: 20px;
+}
+
+#close {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 10px;
+    margin: 5px;
+}
+
+.back-btn {
+    display: inline-block;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: auto;
+    padding: 12px 24px;
+    margin-top: 25px;
+    text-align: center;
+    align-self: center;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .controls {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding-top: 200px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    gap: 33px;
+    padding: 10px;
 }
 
 .hide {
@@ -114,4 +151,64 @@ img {
     padding: 50px;
     border-radius: 5px;
     text-align: center;
+}
+
+/* Contact form */
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 525px;
+    border-radius: 30px;
+    color: #2e2e2e;
+    background-color: rgba(158, 206, 226, 0.5);
+    box-shadow: rgba(0, 0, 4, 0.75) 1.95px 1.95px 2.6px;
+}
+
+.form h2 {
+    padding-bottom: 25px;
+}
+
+.form h2,
+h3 {
+    text-align: center;
+}
+
+.text-input {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#submit-button {
+    display: inline-block;
+    background-color: #ffa500;
+    color: #000;
+    border: 1px solid #ffa600;
+    border-radius: 30px;
+    font: bold 18px;
+    font-size: 120%;
+    width: auto;
+    padding: 12px 24px;
+    text-align: center;
+    align-self: center;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    opacity: 0.8;
+
 }

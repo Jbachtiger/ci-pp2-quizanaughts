@@ -10,3 +10,8 @@ open.addEventListener('click', () => {
 close.addEventListener('click', () => {
     modal_container.classList.remove('show')
 });
+
+// Contact us button
+document.getElementById("contact-btn").onclick = function() {
+    location.href = "contact.html";
+};
