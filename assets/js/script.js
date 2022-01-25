@@ -26,6 +26,9 @@ const nextButton = document.getElementById('next-btn');
 const homeButton = document.getElementById('home-btn');
 const quizQuestions = document.getElementById('quiz-questions');
 
+// Declared let variables
+let shuffledQuestions;
+let currentQuestionIndex;
 
 //Click event to start game
 startButton.addEventListener('click', startGame);
@@ -33,6 +36,8 @@ startButton.addEventListener('click', startGame);
 // Starts game
 function startGame() {
     startButton.classList.add('hide');
+    shuffledQuestions = quizQuestions.sort(() => Math.random() - .5);
+    currentQuestionIndex = 0;
     howToPlayButton.classList.add('hide');
     contactUsButton.classList.add('hide');
     homeButton.classList.remove('hide');
