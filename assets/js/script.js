@@ -18,7 +18,23 @@ document.getElementById("contact-btn").onclick = function() {
 
 // Quiz code
 
+//Declared constant variables
+const startButton = document.getElementById("start-btn");
+const howToPlayButton = document.getElementById("open");
+const contactUsButton = document.getElementById ('contact-btn');
+const nextButton = document.getElementById('next-btn');
+const homeButton = document.getElementById('home-btn');
+const quizQuestions = document.getElementById('quiz-questions');
+
+
+//Click event to start game
+startButton.addEventListener('click', startGame);
+startButton.classList.add('hide');
+
+
+// Starts game
 function startGame () {
+    
 
 }
 
@@ -35,5 +51,5 @@ function incrementScore () {
 }
 
 function incrementIncorrectAnswer () {
-    
+
 }
