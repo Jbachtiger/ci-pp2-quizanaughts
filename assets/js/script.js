@@ -50,6 +50,7 @@ function startGame() {
 
 // Get's question and shuffles it
 function nextQuestion() {
+    resetQuiz();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 
 }
@@ -69,6 +70,16 @@ function showQuestion(question) {
     })
 
 }
+
+// Resets questions and answers to default state each time a new question is set
+function resetQuiz() {
+    nextButton.classList.add('hide');
+    while (answerButtons.firstChild) {
+        answerButtons.removeChild(answerButtons.firstChild);
+
+    }
+}
+
 
 function selectAnswer(event) {
 
@@ -171,7 +182,7 @@ const questions = [{
             }
         ]
     }, {
-        question: 'What planet is known as the red planet',
+        question: 'What planet is known as the red planet?',
         answers: [{
                 text: 'Mars',
                 correct: true
