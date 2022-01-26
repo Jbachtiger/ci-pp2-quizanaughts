@@ -80,9 +80,18 @@ function resetQuiz() {
     }
 }
 
-
+/*
+Checks to see if player has selected correct or wrong answer. Changes button colour depeding on the result.
+*/
 function selectAnswer(event) {
-
+    const selectedButton = event.target;
+    const correct = selectedButton.dataset.correct;
+    if (correct) {
+        selectedButton.style.backgroundColor = "green";
+    } else {
+        selectedButton.style.backgroundColor = "red";
+    }
+    nextButton.classList.remove('hide');
 }
 
 function incrementScore() {
