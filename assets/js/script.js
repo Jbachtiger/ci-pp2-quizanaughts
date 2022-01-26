@@ -35,6 +35,11 @@ let currentQuestionIndex;
 //Click event to start game
 startButton.addEventListener('click', startGame);
 
+// Click event for next button to increment to next question
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++;
+    nextQuestion();
+})
 
 // Starts game
 function startGame() {
@@ -92,6 +97,7 @@ function selectAnswer(event) {
     } else {
         selectedButton.style.backgroundColor = "red";
     }
+    // Checks to see if player is on last question and if so gives them a play again option
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
