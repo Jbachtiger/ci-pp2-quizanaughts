@@ -35,6 +35,7 @@ let currentQuestionIndex;
 //Click event to start game
 startButton.addEventListener('click', startGame);
 
+
 // Starts game
 function startGame() {
     startButton.classList.add('hide');
@@ -91,7 +92,12 @@ function selectAnswer(event) {
     } else {
         selectedButton.style.backgroundColor = "red";
     }
-    nextButton.classList.remove('hide');
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+        nextButton.classList.remove('hide');
+    } else {
+        startButton.innerText = 'Play Again';
+        startButton.classList.remove('hide');
+    }
 }
 
 function incrementScore() {
