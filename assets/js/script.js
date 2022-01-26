@@ -48,17 +48,29 @@ function startGame() {
     nextQuestion();
 }
 
+// Get's question and shuffles it
 function nextQuestion() {
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 
 }
 
+// Shows questions and answers in quiz
 function showQuestion(question) {
     questionElement.innerText = question.question;
+    question.answers.forEach(answer => {
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('btn');
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener('click', selectAnswer)
+        answerButtons.appendChild(button)
+    })
 
 }
 
-function selectAnswer() {
+function selectAnswer(event) {
 
 }
 
@@ -70,6 +82,7 @@ function incrementIncorrectAnswer() {
 
 }
 
+// List of questions
 const questions = [{
         question: 'How many planets do we have in our solar system?',
         answers: [{
