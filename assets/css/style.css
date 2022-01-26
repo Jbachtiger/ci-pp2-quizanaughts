@@ -47,9 +47,9 @@ a {
 /* Games area */
 
 .quiz-container {
-    width: 450px;
+    /* width: 450px;
     height: 450px;
-    margin: 10px;
+    margin: 10px; */
     border-radius: 5px;
     background-color: lightblue;
     padding: 20px;
@@ -118,7 +118,7 @@ a {
     flex-direction: column;
     text-align: center;
     gap: 33px;
-    padding: 75px;
+    /* padding: 75px; */
 }
 
 .quiz-control {

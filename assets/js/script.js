@@ -16,6 +16,11 @@ document.getElementById("contact-btn").onclick = function() {
     location.href = "contact.html";
 };
 
+// Home button
+document.getElementById("home-btn").onclick = function() {
+    location.href = "index.html";
+};
+
 // Quiz code
 
 //Declared constant variables
@@ -48,7 +53,7 @@ function startGame() {
     currentQuestionIndex = 0;
     howToPlayButton.classList.add('hide');
     contactUsButton.classList.add('hide');
-    homeButton.classList.remove('hide');
+    homeButton.classList.add('hide');
     nextButton.classList.remove('hide');
     quizQuestions.classList.remove('hide');
     nextQuestion();
@@ -103,6 +108,7 @@ function selectAnswer(event) {
     } else {
         startButton.innerText = 'Play Again';
         startButton.classList.remove('hide');
+        homeButton.classList.remove('hide');
     }
 }
 
