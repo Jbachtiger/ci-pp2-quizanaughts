@@ -63,6 +63,20 @@ a {
     font-size: 1.4rem;
 }
 
+/* Progress bar */
+#outer-progress-bar {
+    width: 10rem;
+    height: 2rem;
+    border: 1px solid orange;
+    margin-bottom: 5px;
+}
+
+#inner-progress-bar {
+    height: 1.9rem;
+    background-color: orange;
+    width: 0%;
+}
+
 /* Buttons */
 .btn-grid {
     display: grid;
