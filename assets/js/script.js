@@ -35,6 +35,8 @@ const answerButtons = document.getElementById('answer-buttons');
 const questionCounterText = document.getElementById('question-counter');
 const totalCorrectAnswersText = document.getElementById('score-tally');
 const maxQuestions = 6;
+const InnerProgressBar = document.getElementById("inner-progress-bar");
+const OuterProgressBar = document.getElementById("outer-progress-bar");
 
 // Declared let variables
 let shuffledQuestions;
@@ -63,6 +65,7 @@ function startGame() {
     quizQuestions.classList.remove('hide');
     questionCounterText.classList.remove('hide');
     totalCorrectAnswersText.classList.remove('hide');
+    OuterProgressBar.classList.remove('hide');
     nextQuestion();
 }
 
@@ -73,7 +76,8 @@ function nextQuestion() {
     questionCounter++;
     questionCounterText.innerText = `Question: ${questionCounter}/${maxQuestions}`;
     totalCorrectAnswersText.innerText = `Score ${score}`;
-
+    // Updated progress bar
+    InnerProgressBar.style.width = `${(questionCounter / maxQuestions) * 100}%`;
 }
 
 // Shows questions and answers in quiz
