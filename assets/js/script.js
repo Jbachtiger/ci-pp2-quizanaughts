@@ -116,6 +116,8 @@ function selectAnswer(event) {
         nextButton.classList.remove('hide');
     } else {
         startButton.innerText = 'Play Again';
+        startButton.addEventListener('click', startButton)
+        score = 0, questionCounter = 0;
         startButton.classList.remove('hide');
         homeButton.classList.remove('hide');
     }
