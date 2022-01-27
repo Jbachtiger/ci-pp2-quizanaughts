@@ -32,6 +32,9 @@ const homeButton = document.getElementById('home-btn');
 const quizQuestions = document.getElementById('quiz-questions');
 const questionElement = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
+const questionCounterText = document.getElementById('question-counter');
+const totalCorrectAnswersText = document.getElementById('score-tally');
+const maxQuestions = 6;
 
 // Declared let variables
 let shuffledQuestions;
@@ -59,10 +62,13 @@ function startGame() {
     nextQuestion();
 }
 
-// Get's question and shuffles it
+// Get's question and shuffles it. Also adds question counter and score text as well as increments the question.
 function nextQuestion() {
     resetQuiz();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
+    questionCounter++;
+    questionCounterText.innerText = `Question: ${questionCounter}/${maxQuestions}`;
+    totalCorrectAnswersText.innerText = `Score ${score}`;
 
 }
 
