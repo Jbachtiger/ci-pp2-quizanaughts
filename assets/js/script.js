@@ -61,6 +61,8 @@ function startGame() {
     homeButton.classList.add('hide');
     nextButton.classList.remove('hide');
     quizQuestions.classList.remove('hide');
+    questionCounterText.classList.remove('hide');
+    totalCorrectAnswersText.classList.remove('hide');
     nextQuestion();
 }
 
