@@ -39,6 +39,8 @@ const maxQuestions = 6;
 // Declared let variables
 let shuffledQuestions;
 let currentQuestionIndex;
+let score = 0;
+let questionCounter = 0;
 
 //Click event to start game
 startButton.addEventListener('click', startGame);
@@ -105,6 +107,7 @@ function selectAnswer(event) {
     const correct = selectedButton.dataset.correct;
     if (correct) {
         selectedButton.style.backgroundColor = "green";
+        score++;
     } else {
         selectedButton.style.backgroundColor = "red";
     }
@@ -116,14 +119,6 @@ function selectAnswer(event) {
         startButton.classList.remove('hide');
         homeButton.classList.remove('hide');
     }
-}
-
-function incrementScore() {
-
-}
-
-function incrementIncorrectAnswer() {
-
 }
 
 // List of questions
