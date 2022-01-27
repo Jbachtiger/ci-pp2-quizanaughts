@@ -56,6 +56,13 @@ a {
     box-shadow: rgba(0, 0, 4, 0.75) 1.95px 1.95px 2.6px;
 }
 
+/* Score tracking and question counter area */
+.score-tracking {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
 /* Buttons */
 .btn-grid {
     display: grid;
