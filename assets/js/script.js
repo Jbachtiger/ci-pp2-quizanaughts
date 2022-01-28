@@ -164,7 +164,7 @@ const questions = [{
                 text: 'Mars',
                 correct: false
             }, {
-                text: 'Jupitor',
+                text: 'Jupiter',
                 correct: false
             }
         ]
@@ -217,7 +217,7 @@ const questions = [{
                 text: 'Mercury',
                 correct: false
             }, {
-                text: 'Jupitur',
+                text: 'Jupiter',
                 correct: true
             }
         ]
@@ -240,14 +240,14 @@ const questions = [{
         ]
     },
     {
-        question: 'Have humans ever walked on Mars?',
+        question: 'Saturn has 150 moons and moonlets',
         answers: [{
-                text: 'Yes',
-                correct: false
+                text: 'True',
+                correct: true
             },
             {
-                text: 'No',
-                correct: true
+                text: 'False',
+                correct: false
             }
         ]
     },
@@ -295,10 +295,10 @@ const questions = [{
             },
             {
                 text: 'The Milky Way Galaxy',
-                correct: false
+                correct: true
             }, {
                 text: 'The Snickers Galaxy',
-                correct: true
+                correct: false
             }, {
                 text: 'The Stars Galaxy',
                 correct: false
