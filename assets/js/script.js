@@ -111,6 +111,10 @@ Checks to see if player has selected correct or wrong answer. Changes button col
 function selectAnswer(event) {
     const selectedButton = event.target;
     const correct = selectedButton.dataset.correct;
+    const answerButton = document.getElementsByClassName('btn');
+    for (let i = 0; i < answerButton.length; i++) {
+        answerButton[i].removeEventListener('click', selectAnswer);
+    }
     if (correct) {
         selectedButton.style.backgroundColor = "green";
         score++;
