@@ -34,7 +34,7 @@ const questionElement = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
 const questionCounterText = document.getElementById('question-counter');
 const totalCorrectAnswersText = document.getElementById('score-tally');
-const maxQuestions = 6;
+const maxQuestions = 15;
 const InnerProgressBar = document.getElementById("inner-progress-bar");
 const OuterProgressBar = document.getElementById("outer-progress-bar");
 
@@ -238,7 +238,135 @@ const questions = [{
                 correct: false
             }
         ]
-    }
+    },
+    {
+        question: 'Have humans ever walked on Mars?',
+        answers: [{
+                text: 'Yes',
+                correct: false
+            },
+            {
+                text: 'No',
+                correct: true
+            }
+        ]
+    },
+    {
+        question: 'Who was the first person to walk on the moon?',
+        answers: [{
+                text: 'Neil Armstrong ',
+                correct: true
+            },
+            {
+                text: 'Elon Musk',
+                correct: false
+            }, {
+                text: 'William Shatner',
+                correct: false
+            }, {
+                text: 'Tim Peake',
+                correct: false
+            }
+        ]
+    },
+    {
+        question: "What is the name of NASA's most famous space telescope?",
+        answers: [{
+                text: 'Strong Telescope',
+                correct: false
+            },
+            {
+                text: 'Space Telescope',
+                correct: false
+            }, {
+                text: 'Hubble Space Telescope',
+                correct: true
+            }, {
+                text: 'Astro Telescope',
+                correct: false
+            }
+        ]
+    },
+    {
+        question: "Earth is located in which galaxy?",
+        answers: [{
+                text: 'The Mars Galaxy',
+                correct: false
+            },
+            {
+                text: 'The Milky Way Galaxy',
+                correct: false
+            }, {
+                text: 'The Snickers Galaxy',
+                correct: true
+            }, {
+                text: 'The Stars Galaxy',
+                correct: false
+            }
+        ]
+    },
+    {
+        question: 'Is the sun a star or a planet?',
+        answers: [{
+                text: 'Star',
+                correct: true
+            },
+            {
+                text: 'Planet',
+                correct: false
+            }
+        ]
+    },
+    {
+        question: 'Have humans ever walked on Mars?',
+        answers: [{
+                text: 'Yes',
+                correct: false
+            },
+            {
+                text: 'No',
+                correct: true
+            }
+        ]
+    },
+    {
+        question: 'Is the planet Neptune bigger than Earth?',
+        answers: [{
+                text: 'Yes ',
+                correct: true
+            },
+            {
+                text: 'No',
+                correct: false
+            }
 
+        ]
+    },
+    {
+        question: 'Does the sun orbit the Earth?',
+        answers: [{
+                text: 'Yes',
+                correct: false
+            },
+            {
+                text: 'No',
+                correct: true
+
+            }
+        ]
+    },
+    {
+        question: 'Can humans breathe normally in space?',
+        answers: [{
+                text: 'Yes',
+                correct: false
+            },
+            {
+                text: 'No',
+                correct: true
+
+            }
+        ]
+    }
 
 ]
