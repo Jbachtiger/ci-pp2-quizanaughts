@@ -37,12 +37,14 @@ const totalCorrectAnswersText = document.getElementById('score-tally');
 const maxQuestions = 15;
 const InnerProgressBar = document.getElementById("inner-progress-bar");
 const OuterProgressBar = document.getElementById("outer-progress-bar");
+const countDownTimer = document.getElementById('timer');
 
 // Declared let variables
 let shuffledQuestions;
 let currentQuestionIndex;
 let score = 0;
 let questionCounter = 0;
+let quizTimer;
 
 //Click event to start game
 startButton.addEventListener('click', startGame);
@@ -66,7 +68,9 @@ function startGame() {
     questionCounterText.classList.remove('hide');
     totalCorrectAnswersText.classList.remove('hide');
     OuterProgressBar.classList.remove('hide');
+    countDownTimer.classList.remove('hide');
     nextQuestion();
+    timer();
 }
 
 // Get's question and shuffles it. Also adds question counter and score text as well as increments the question.
@@ -131,6 +135,26 @@ function selectAnswer(event) {
         startButton.classList.remove('hide');
         homeButton.classList.remove('hide');
     }
+}
+
+
+// Countdown timer
+function timer() {
+    let timeleft = 60;
+    // let quizTimer = setInterval(function() {
+    quizTimer = setInterval(function() {
+        timeleft--;
+        document.getElementById('timer').textContent = `Time: ${timeleft} sec`;
+        if (timeleft <= 0) {
+            alert(`Oh no! You've run out of time. You scored ${score}/${maxQuestions}. Why not play again and see if you can finish the quiz!`);
+            startButton.innerText = 'Play Again';
+            startButton.addEventListener('click', startButton)
+            startButton.classList.remove('hide');
+            score = 0, questionCounter = 0;
+            nextButton.classList.add('hide');
+            clearInterval(quizTimer);
+        }
+    }, 1000);
 }
 
 // List of questions

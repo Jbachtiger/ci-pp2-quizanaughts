@@ -43,6 +43,10 @@ a {
     color: #2e2e2e;
 }
 
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* Games area */
 
