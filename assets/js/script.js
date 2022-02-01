@@ -84,6 +84,27 @@ function nextQuestion() {
     InnerProgressBar.style.width = `${(questionCounter / maxQuestions) * 100}%`;
 }
 
+
+// Countdown timer
+function timer() {
+    let timeleft = 60;
+    quizTimer = setInterval(function() {
+        timeleft--;
+        document.getElementById('timer').textContent = `Time: ${timeleft} sec`;
+        if (timeleft <= 0) {
+            alert(`Oh no! You've run out of time. You scored ${score}/${maxQuestions}. Why not play again and see if you can finish the quiz!`);
+            startButton.innerText = 'Play Again';
+            startButton.addEventListener('click', startButton)
+            startButton.classList.remove('hide');
+            score = 0, questionCounter = 0;
+            nextButton.classList.add('hide');
+            clearInterval(quizTimer);
+            const btns = document.querySelectorAll("#answer-buttons .btn");
+            btns.forEach(btn => btn.style.pointerEvents = 'none');
+        }
+    }, 1000);
+}
+
 // Shows questions and answers in quiz
 function showQuestion(question) {
     questionElement.innerText = question.question;
@@ -115,7 +136,7 @@ Checks to see if player has selected correct or wrong answer. Changes button col
 function selectAnswer(event) {
     const selectedButton = event.target;
     const correct = selectedButton.dataset.correct;
-    const answerButton = document.getElementsByClassName('btn');
+    let answerButton = document.getElementsByClassName('btn');
     for (let i = 0; i < answerButton.length; i++) {
         answerButton[i].removeEventListener('click', selectAnswer);
     }
@@ -125,7 +146,7 @@ function selectAnswer(event) {
     } else {
         selectedButton.style.backgroundColor = "red";
     }
-    // Checks to see if player is on last question and if so gives them a play again option
+    // Checks to see if player is on last question and if so gives them a play again option. Resets scores and countdown timer.
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
@@ -134,27 +155,8 @@ function selectAnswer(event) {
         score = 0, questionCounter = 0;
         startButton.classList.remove('hide');
         homeButton.classList.remove('hide');
+        clearInterval(quizTimer);
     }
-}
-
-
-// Countdown timer
-function timer() {
-    let timeleft = 60;
-    // let quizTimer = setInterval(function() {
-    quizTimer = setInterval(function() {
-        timeleft--;
-        document.getElementById('timer').textContent = `Time: ${timeleft} sec`;
-        if (timeleft <= 0) {
-            alert(`Oh no! You've run out of time. You scored ${score}/${maxQuestions}. Why not play again and see if you can finish the quiz!`);
-            startButton.innerText = 'Play Again';
-            startButton.addEventListener('click', startButton)
-            startButton.classList.remove('hide');
-            score = 0, questionCounter = 0;
-            nextButton.classList.add('hide');
-            clearInterval(quizTimer);
-        }
-    }, 1000);
 }
 
 // List of questions
