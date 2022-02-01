@@ -38,6 +38,8 @@ const maxQuestions = 15;
 const InnerProgressBar = document.getElementById("inner-progress-bar");
 const OuterProgressBar = document.getElementById("outer-progress-bar");
 const countDownTimer = document.getElementById('timer');
+const welcomeHeading = document.getElementById('welcome-heading');
+const welcomeIntro = document.getElementById('welcome-intro');
 
 // Declared let variables
 let shuffledQuestions;
@@ -54,6 +56,10 @@ nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
     nextQuestion();
 })
+
+// Welcome text for quiz menu
+welcomeHeading.innerText = "Are you ready space adventurers?";
+welcomeIntro.innerText = "It's time for you to devle deep into space and put your knowledge to the test. Good luck!";
 
 // Starts game
 function startGame() {
