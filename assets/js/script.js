@@ -69,6 +69,8 @@ function startGame() {
     howToPlayButton.classList.add('hide');
     contactUsButton.classList.add('hide');
     homeButton.classList.add('hide');
+    welcomeHeading.classList.add('hide');
+    welcomeIntro.classList.add('hide');
     nextButton.classList.remove('hide');
     quizQuestions.classList.remove('hide');
     questionCounterText.classList.remove('hide');

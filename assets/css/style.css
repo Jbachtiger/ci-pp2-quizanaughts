@@ -27,6 +27,7 @@ h1 {
     font-family: "Balsamiq Sans", sans-serif;
     font-size: 375%;
     font-weight: 700;
+    text-align: center;
 }
 
 img {
@@ -58,6 +59,10 @@ a {
     background-color: lightblue;
     padding: 20px;
     box-shadow: rgba(0, 0, 4, 0.75) 1.95px 1.95px 2.6px;
+}
+
+#welcome {
+    width: 400px;
 }
 
 /* Score tracking and question counter area */
