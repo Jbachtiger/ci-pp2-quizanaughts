@@ -1,34 +1,7 @@
-// Modal - Credit Florin Pop Youtube video guide. Walkthrough helped create modal and code was used and modified for project.
-const open = document.getElementById('open');
-const modal_container = document.getElementById('modal_container');
-const close = document.getElementById('close');
-
-open.addEventListener('click', () => {
-    modal_container.classList.add('show')
-});
-
-close.addEventListener('click', () => {
-    modal_container.classList.remove('show')
-});
-
-// Contact us button
-document.getElementById("contact-btn").onclick = function() {
-    location.href = "contact.html";
-};
-
-// Home button
-document.getElementById("home-btn").onclick = function() {
-    location.href = "index.html";
-};
-
-// Quiz code
+// Quiz code - Credit Web Dev Simplified - base code logic amended from his tutorial. Code has been modified and extra features/components added to it.
 
 //Declared constant variables
-const startButton = document.getElementById("start-btn");
-const howToPlayButton = document.getElementById("open");
-const contactUsButton = document.getElementById('contact-btn');
 const nextButton = document.getElementById('next-btn');
-const homeButton = document.getElementById('home-btn');
 const quizQuestions = document.getElementById('quiz-questions');
 const questionElement = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
@@ -48,8 +21,6 @@ let score = 0;
 let questionCounter = 0;
 let quizTimer;
 
-//Click event to start game
-startButton.addEventListener('click', startGame);
 
 // Click event for next button to increment to next question
 nextButton.addEventListener('click', () => {
@@ -66,7 +37,7 @@ function startGame() {
     startButton.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
-    howToPlayButton.classList.add('hide');
+    openModalButton.classList.add('hide');
     contactUsButton.classList.add('hide');
     homeButton.classList.add('hide');
     welcomeHeading.classList.add('hide');
