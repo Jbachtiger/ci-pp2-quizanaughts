@@ -391,6 +391,7 @@ function onAnswerClick(event) {
 
 // End Quiz
 function endQuiz() {
+    totalCorrectAnswersText.innerText = `Score ${score}`;
     answerButtons.classList.add("hide");
     quizQuestions.classList.add('hide');
     outroContainer.classList.remove('hide');
