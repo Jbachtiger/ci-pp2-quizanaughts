@@ -306,6 +306,7 @@ function nextQuestion() {
 // Countdown timer
 function initTimer() {
     let timeleft = 60;
+    document.getElementById('timer').textContent = `Time: ${timeleft} sec`;
     quizTimerRef = setInterval(function() {
         timeleft--;
         document.getElementById('timer').textContent = `Time: ${timeleft} sec`;
