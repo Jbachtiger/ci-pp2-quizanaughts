@@ -63,7 +63,8 @@ a {
     line-height: 1.7;
 }
 
-#welcome {
+#welcome,
+#outro-container {
     width: 400px;
 }
 

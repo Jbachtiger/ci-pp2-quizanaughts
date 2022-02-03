@@ -77,13 +77,13 @@ const questions = [{
             },
             {
                 text: 'Saturn',
-                correct: false
+                correct: true
             }, {
                 text: 'Mercury',
                 correct: false
             }, {
                 text: 'Jupiter',
-                correct: true
+                correct: false
             }
         ]
     }, {
@@ -251,12 +251,15 @@ const outerProgressBar = document.getElementById('outer-progress-bar');
 const countDownTimer = document.getElementById('timer');
 const welcomeHeading = document.getElementById('welcome-heading');
 const welcomeIntro = document.getElementById('welcome-intro');
+const congratulationsHeading = document.getElementById('congratulations-heading');
+const outroText = document.getElementById('outro-text');
+const outroContainer = document.getElementById('outro-container');
 
 // Declared let variables
 let shuffledQuestions;
 let currentQuestionIndex;
 let score;
-let questionCounter;
+let progressBarCounter;
 let quizTimer;
 
 // Intro text for quiz
@@ -275,14 +278,16 @@ function startGame() {
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
     score = 0;
-    questionCounter = 0;
+    progressBarCounter = 0;
     openModalButton.classList.add('hide');
     contactUsButton.classList.add('hide');
     homeButton.classList.add('hide');
     welcomeHeading.classList.add('hide');
     welcomeIntro.classList.add('hide');
+    outroContainer.classList.add('hide');
     nextButton.classList.remove('hide');
     quizQuestions.classList.remove('hide');
+    answerButtons.classList.remove("hide");
     questionCounterText.classList.remove('hide');
     totalCorrectAnswersText.classList.remove('hide');
     outerProgressBar.classList.remove('hide');
@@ -295,11 +300,11 @@ function startGame() {
 function nextQuestion() {
     refreshUIForNextQuestion();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
-    questionCounter++;
+    progressBarCounter++;
     questionCounterText.innerText = `Question: ${currentQuestionIndex + 1}/${maxQuestions}`;
     totalCorrectAnswersText.innerText = `Score ${score}`;
     // Updated progress bar
-    innerProgressBar.style.width = `${(questionCounter / maxQuestions) * 100}%`;
+    innerProgressBar.style.width = `${(progressBarCounter / maxQuestions) * 100}%`;
 }
 
 
@@ -380,5 +385,16 @@ function onAnswerClick(event) {
         startButton.classList.remove('hide');
         homeButton.classList.remove('hide');
         clearInterval(quizTimerRef);
+        endQuiz();
     }
+}
+
+// End Quiz
+function endQuiz() {
+    answerButtons.classList.add("hide");
+    quizQuestions.classList.add('hide');
+    outroContainer.classList.remove('hide');
+    congratulationsHeading.innerText = `Congratulations, you scored ${score}!`;
+    outroText.innerText = "Well done for completing the quiz. We hoped you enjoyed testing out your knowledge.";
+    outroContainer.classList.remove('hide');
 }
