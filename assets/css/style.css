@@ -253,6 +253,11 @@ textarea {
 
 }
 
+#playerResponse {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 /* Media queries */
 /* for large and medium screens wide and down */
 @media screen and (max-width: 1500px) {
