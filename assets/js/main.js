@@ -352,9 +352,9 @@ function initTimer() {
             startButton.addEventListener("click", startButton);
             startButton.classList.remove("hide");
             nextButton.classList.add("hide");
+            homeButton.classList.remove('hide');
+            quizQuestions.classList.add('hide');
             clearInterval(quizTimerRef);
-            const btns = document.querySelectorAll("#answer-buttons .btn");
-            btns.forEach((btn) => (btn.style.pointerEvents = "none"));
         }
     }, 1000);
 }
