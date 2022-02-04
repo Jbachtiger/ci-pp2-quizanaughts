@@ -291,11 +291,15 @@ nextButton.addEventListener("click", () => {
     nextQuestion();
 });
 
-// Calls startGame function
-startGame();
+/**
+ * Calls startGame function
+ */
+function beginQuiz() {
+    startGame();
+}
 
 /**
- * This function is called once the begin quiz button has been clicked and starts the quiz
+ * Runs the main game loop
  */
 function startGame() {
     startButton.classList.add("hide");
