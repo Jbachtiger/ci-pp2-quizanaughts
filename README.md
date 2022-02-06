@@ -92,3 +92,93 @@ __First Time Visitor Goals__
  - [Quiz Page](docs/wireframes/wireframe-quiz-page.png)
  - [Contact Us](docs/wireframes/wireframe-contact-us.png)
 
+## Features 
+
+- __Game Menu__
+
+  - This is the main section of the website which includes the game UI. It is responsive and includes the begin quiz, how to play and contact buttons
+  - The purpose of this section is to allow the user to navigate the game options easily across all devices without having to use a back button to get to the next page
+  ![Game Menu](docs/feature-screenshots/game-menu.png)
+
+- __Title and Welcome Text__
+
+  - As you enter the website, you are greeted with the quiz title and welcome text. This provides a quick overview of the theme of the quiz
+  - The text has been written to appeal to children and is light hearted
+  - The font styling has also been specifically chosen to appeal to children
+
+  ![Title and Welcome Text](docs/feature-screenshots/title-and-welcome-text.png)
+
+- __Begin Quiz Button__
+
+  - The begin quiz button is the first button you see on the game menu and is in a promient green colour to stand out
+  - Once the user clicks the begin quiz button this will take them to the questions and answers page to play the quiz
+
+  ![Begin Quiz Button](docs/feature-screenshots/begin-quiz-button.png)
+
+- __How To Play Button__
+
+  - The how to play button is the next button you see in the game menu. This button is a pop-up modal which once clicked opens up a modal which contains the game rules.
+  - The pop-up modal was used for this button to minimise the amount of clicks the player has to make to be able to go back to the game menu screen and play the quiz
+
+  ![How To Play Button](docs/feature-screenshots/how-to-play-button.png)
+
+- __Contact Button and Form__ 
+
+  - The contact button is the last button on the game menu and once clicked takes the player to a dedicated page which has a form on it
+  - The form has been designed to be as short as possible, with only 3 fields to input (name, email and comments) and provides a way for the players to provice feedback
+  - The form has box shadowing on it and a black border around the input fields to make them stand out
+  - The form uses javascript to pre-populate information and on submit instead of the user being sent to the designated action URL as message displays to thank the player for their message and that a memeber of the team will get back to them shortly
+
+  ![Contact Button](docs/feature-screenshots/contact-button.png)
+
+  ![Form](docs/feature-screenshots/form.png)
+
+- __Main Quiz__
+ -  The is the main quiz section that has all the questions and answers related to space
+ - This part also contains the score, progress bar, countdown timer and question counter
+ - It has been designed to be clear and intuitive
+ - When a player clicks on an answer, it either turns green(correct) or red (incorrect) and then disables all other options so only one answer can be clicked per question
+ - Each time an answer is chosen, a next button will appear to take the player onto the next question
+ - If the countdown timer goes to 0 before all answers have been chosen, then a pop up message will be initiated displaying a better luck next time message. Once clicked, the answers and questions will disappear and be replace with a play again button. This will then lead to the quiz being reset once clicked
+
+  ![Main Quiz](docs/feature-screenshots/main-quiz.png)
+
+- __End Page For Quiz__
+ - This is the section of the quiz that is displayed once the last question has been answered
+ - It shows a congratulations message and dynamically inputs the score the user has achived
+ - It also displays a home and play again button
+
+  ![End Page For Quiz](docs/feature-screenshots/end-quiz-page.png)
+
+- __Question Counter__
+
+  - The question counter provides a way for the player to know how many questions they have answered and what question they are on.
+  - It makes it easier for them to judge how much of the quiz they have completed and how much time they can spend on all the remaining questions.
+  
+   ![Question Counter](docs/feature-screenshots/question-counter.png)
+
+- __Progress Bar__
+ 
+ - The progress bar is a visually appealing way to give quick snapshot of how far the player has progressed through the quiz.
+ - This compliments the question counter and they both go hand in hand. 
+ - The colour orange was chosen as it stands out and has good contrast compared to the other colours being used.
+ - The progress bar dynamically fills up after each question has been answered
+
+   ![Progress Bar](docs/feature-screenshots/progress-bar.png)
+
+- __Score__
+
+  - The score system works on a one point per correct question basis.
+  - As you progress through the quiz the score is automtically updated in realtime as more and more correct questions are answered.
+  - A score feature was added to bring more interactivity, increase the fun element and encourage healthy competition. 
+
+   ![Score](docs/feature-screenshots/score.png)
+
+   - __Countdown Timer__
+
+  - The question counter has been added to the main game quiz to add a bit more of a challenge element to the quiz and make it more enjoyable and rewarding to complete.
+  - It counts down in seconds and gives the user 120 second to complete the who quiz. If the user doesn't manage this a play again option is displayed which resets the quiz for them to try again.
+
+  ![Countdown Timer](docs/feature-screenshots/countdown-timer.png)
+
+  
