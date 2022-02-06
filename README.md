@@ -93,7 +93,6 @@ __First Time Visitor Goals__
  - [Contact Us](docs/wireframes/wireframe-contact-us.png)
 
 ## Features 
-
 - __Game Menu__
 
   - This is the main section of the website which includes the game UI. It is responsive and includes the begin quiz, how to play and contact buttons
@@ -181,4 +180,33 @@ __First Time Visitor Goals__
 
   ![Countdown Timer](docs/feature-screenshots/countdown-timer.png)
 
-  
+  ### Future Development
+- Currently the form doesn't POST the users data to anywhere as i've not learned how to do this yet. In future, I would like to like this up properly
+- Create a high score table with the ability for the player to input their username which saves their individal scores
+- Add audio feedback when questions are answered are correct or wrong
+- Create multiple levels where the questions get harder the higher the level
+- Create a resources page that provides lots more education reading around the topic of space 
+
+## Technologies Used
+### Languages Used
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+- [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+### Frameworks, Libaries and Programs Used
+- [Gitpod](https://gitpod.io/projects) - this was my code editor for this project.
+- [Git](https://git-scm.com/) - was used for version control using the terminal through gitpod to commit to Git and push to Github.
+- [Github](https://github.com/) - is used to store the code for this project after being pushed from Git.
+- [Balsamiq](https://balsamiq.com/) - was used to create the wireframes during the design process.
+- [Google Fonts](https://fonts.google.com/) - used to import fonts to website.
+- [TinyPNG](https://tinypng.com/) - used to compress images.
+- [Canva](https://www.canva.com/) - used to edit and resize background images.
+- [GoogleDev Tools](https://developer.chrome.com/docs/devtools/) - was used to help investigate issues with code and visually see what code was related to which area on the page. The console function was also used for Javascript.
+- [Techsini](http://techsini.com/multi-mockup/index.php) - was used to generate multi-device website mockups.
+- [ColorSpace](https://mycolor.space/?hex=%23ADD8E6&sub=1) - used to generate colour pallets for use on website.
+- [a11y](https://color.a11y.com/) - used to check website colour contrast and accessibility.
+- [Fireshot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg?hl=en) - this was a Google chrome extension used to take screenshots.
+- [HTML Formatter](https://webformatter.com/html) - used to double check all Javascript, HTML and CSS code was formatted correctly.
+
