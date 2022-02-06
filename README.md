@@ -29,7 +29,7 @@ Quizanaughts is an interactive quiz site designed to be fun and educational for 
 
 - [Testing](#testing)
   - [Browser and Device Testing](#browser-and-device-testing)
-  - [W3C Validator](#w3c-validator)
+  - [W3C and JSHint Validators](#w3c-and-jshint-validators)
   - [Colour Contrast Checks](#colour-contrast-checks)
   - [Lighthouse Tool](#lighthouse-tool)
   - [Solved Bugs](#solved-bugs)
@@ -210,3 +210,86 @@ __First Time Visitor Goals__
 - [Fireshot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg?hl=en) - this was a Google chrome extension used to take screenshots.
 - [HTML Formatter](https://webformatter.com/html) - used to double check all Javascript, HTML and CSS code was formatted correctly.
 
+## Testing 
+- The main focus of the testing is on Javascript, HTML and CSS as these are the three languages that were used to create the quiz and static web pages. 
+- The testing carried out ensures that the functionality and visual aspects of the website all work as intended. 
+- Testing will be done using numerous devices and browsers, ensuring all UX is to a high standard as well as testing the websites accessibility, SEO and validation. 
+- I have checked the following:
+
+  - The overall website navigational experience, ensuring the main quiz UI is easy to use, there's  a clear logic flow to the menu and all pages can be accessed quickly
+  - All internal links and modals work correctly
+  - All forms are working as expected including script checks e.g. if a user fills in a mandatory field in a form an error message is shown, default values are being populated (using JS), optimally formatted for better readability
+  - All JS code is being executed without any errors, the main quiz game is working as it should be as well as all of its extra features
+  - Contrast checks should report no errors
+  - Validation checks for HTML and CSS should report no errors 
+  - Lighthouse test scores should be high (within 90-100 range)
+
+
+### Browser and Device Testing
+__Browsers__
+- I have tested the website across the four major browsers including Goolge Chrome, Firefox, Microsoft Edge and Safari. 
+- For each browser, functionality was tested including all quiz features that were built using Javascript, and the responsive design. 
+- The website performed as intended and the responsive design and quiz functoins were checked using developer tools across multiple devices with structural integrity holding for the various sizes and no errors occuring.
+
+__Devices Tested__
+The website was viewed on a variety of devices and screen sizes including:
+- Windows 8.1 Desktop (screen resoultions tested in 2560x1080 and 1920x1080)
+- Macbook Pro (13 inch 2015 version)
+- Moto G4
+- Galaxy S5
+- Pixel 2
+- Pixel 2 XL
+- Iphone 5/SE
+- Iphone 6/7/8
+- Iphone 6/7/8 Plus
+- Iphone X
+- Ipad
+- Ipad Pro
+- Surface Duo
+- Nest Hub
+- Nest Hub Max
+
+A large amount of testing was done to ensure all features of the quiz worked correctly, buttons worked and forms submitted as intended. Family members and the Code Institute Slack community was asked to review the website to point out any bugs or user experience issues.
+
+### W3C and JSHint Validators
+The official W3C Markup Validator was used to validate both the html and css of the project to ensure there were no syntax errors within the site. The JSHint code quality checker was used to ensure no errors were present within the javascript code. The links to the results for each html page, css stylesheet and javascript script are below.
+
+1. W3C HTML Markup Validator
+
+- [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjbachtiger.github.io%2Fci-pp2-quizanaughts%2F)
+- [contact.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjbachtiger.github.io%2Fci-pp2-quizanaughts%2Fcontact.html)
+
+2. W3C CSS Markup Validator 
+
+- Validate css style for [index.html](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjbachtiger.github.io%2Fci-pp2-quizanaughts%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- Validate css style for [contact.html](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjbachtiger.github.io%2Fci-pp2-quizanaughts%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+3. JSHint [https://jshint.com/]()
+
+### Colour Contrast Checks
+I have checked the color contrast of all the pages on the website including index and contact page using the Color Contrast Accessibility Validator by a11y. This ensured that best practise is followed regarding accessibility and maximised readability of the website. The results are shown below.
+
+![Colour Contrast Report - Index Page](docs/testing-and-validation/colour-contrast-checker-index-page.png)
+
+![Colour Contrast Report - Contact Us Page](docs/testing-and-validation/colour-contrast-checker-contact-page.png)
+
+### Lighthouse Tool
+
+I have used the Chrome Lighthouse tool to run a test and audit the entire website on mobile and desktop. The results are shown below.
+
+- index.html
+  - Desktop  
+![Desktop Report](docs/testing-and-validation/lighthouse-audit-index-page-desktop.png)
+
+ - Mobile  
+![Mobile Report](docs/testing-and-validation/lighthouse-audit-index-page-mobile.png)
+
+
+- contact.html
+  - Desktop  
+![Desktop Report](docs/testing-and-validation/lighthouse-audit-contact-page-desktop.png)
+
+ - Mobile  
+![Mobile Report](docs/testing-and-validation/lighthouse-audit-contact-page-mobile.png)
+
+All pages have recieved a score no lower than 99 on all 4 categories of performance, accessibility, best practice and SEO showing it is well optimised. 
