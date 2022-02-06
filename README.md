@@ -196,24 +196,24 @@ __First Time Visitor Goals__
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ### Frameworks, Libaries and Programs Used
-- [Gitpod](https://gitpod.io/projects) - this was my code editor for this project.
-- [Git](https://git-scm.com/) - was used for version control using the terminal through gitpod to commit to Git and push to Github.
-- [Github](https://github.com/) - is used to store the code for this project after being pushed from Git.
-- [Balsamiq](https://balsamiq.com/) - was used to create the wireframes during the design process.
-- [Google Fonts](https://fonts.google.com/) - used to import fonts to website.
-- [TinyPNG](https://tinypng.com/) - used to compress images.
-- [Canva](https://www.canva.com/) - used to edit and resize background images.
-- [GoogleDev Tools](https://developer.chrome.com/docs/devtools/) - was used to help investigate issues with code and visually see what code was related to which area on the page. The console function was also used for Javascript.
-- [Techsini](http://techsini.com/multi-mockup/index.php) - was used to generate multi-device website mockups.
-- [ColorSpace](https://mycolor.space/?hex=%23ADD8E6&sub=1) - used to generate colour pallets for use on website.
-- [a11y](https://color.a11y.com/) - used to check website colour contrast and accessibility.
-- [Fireshot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg?hl=en) - this was a Google chrome extension used to take screenshots.
-- [HTML Formatter](https://webformatter.com/html) - used to double check all Javascript, HTML and CSS code was formatted correctly.
+- [Gitpod](https://gitpod.io/projects) - this was my code editor for this project
+- [Git](https://git-scm.com/) - was used for version control using the terminal through gitpod to commit to Git and push to Github
+- [Github](https://github.com/) - is used to store the code for this project after being pushed from Git
+- [Balsamiq](https://balsamiq.com/) - was used to create the wireframes during the design process
+- [Google Fonts](https://fonts.google.com/) - used to import fonts to website
+- [TinyPNG](https://tinypng.com/) - used to compress images
+- [Canva](https://www.canva.com/) - used to edit and resize background images
+- [GoogleDev Tools](https://developer.chrome.com/docs/devtools/) - was used to help investigate issues with code and visually see what code was related to which area on the page. The console function was also used for Javascript
+- [Techsini](http://techsini.com/multi-mockup/index.php) - was used to generate multi-device website mockups
+- [ColorSpace](https://mycolor.space/?hex=%23ADD8E6&sub=1) - used to generate colour pallets for use on website
+- [a11y](https://color.a11y.com/) - used to check website colour contrast and accessibility
+- [Fireshot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg?hl=en) - this was a Google chrome extension used to take screenshots
+- [HTML Formatter](https://webformatter.com/html) - used to double check all Javascript, HTML and CSS code was formatted correctly
 
 ## Testing 
-- The main focus of the testing is on Javascript, HTML and CSS as these are the three languages that were used to create the quiz and static web pages. 
-- The testing carried out ensures that the functionality and visual aspects of the website all work as intended. 
-- Testing will be done using numerous devices and browsers, ensuring all UX is to a high standard as well as testing the websites accessibility, SEO and validation. 
+- The main focus of the testing is on Javascript, HTML and CSS as these are the three languages that were used to create the quiz and static web pages
+- The testing carried out ensures that the functionality and visual aspects of the website all work as intended
+- Testing will be done using numerous devices and browsers, ensuring all UX is to a high standard as well as testing the websites accessibility, SEO and validation
 - I have checked the following:
 
   - The overall website navigational experience, ensuring the main quiz UI is easy to use, there's  a clear logic flow to the menu and all pages can be accessed quickly
@@ -227,9 +227,9 @@ __First Time Visitor Goals__
 
 ### Browser and Device Testing
 __Browsers__
-- I have tested the website across the four major browsers including Goolge Chrome, Firefox, Microsoft Edge and Safari. 
-- For each browser, functionality was tested including all quiz features that were built using Javascript, and the responsive design. 
-- The website performed as intended and the responsive design and quiz functoins were checked using developer tools across multiple devices with structural integrity holding for the various sizes and no errors occuring.
+- I have tested the website across the four major browsers including Goolge Chrome, Firefox, Microsoft Edge and Safari
+- For each browser, functionality was tested including all quiz features that were built using Javascript, and the responsive design
+- The website performed as intended and the responsive design and quiz functoins were checked using developer tools across multiple devices with structural integrity holding for the various sizes and no errors occuring
 
 __Devices Tested__
 The website was viewed on a variety of devices and screen sizes including:
@@ -293,3 +293,64 @@ I have used the Chrome Lighthouse tool to run a test and audit the entire websit
 ![Mobile Report](docs/testing-and-validation/lighthouse-audit-contact-page-mobile.png)
 
 All pages have recieved a score no lower than 99 on all 4 categories of performance, accessibility, best practice and SEO showing it is well optimised. 
+
+### Solved Bugs
+1. The countdown timer text had a load delay when the begin quiz button was clicked. This offered poor user experience and as such needed to be fixed. This was achieved by adding the template literals code that was calling the timer text and countdown before the quizTimerRef set interval was called.
+   - [Link to commit](https://github.com/Jbachtiger/ci-pp2-quizanaughts/commit/b56ce0e29d63bb2d16c5f7495e3a35269ea63a23)
+
+2. The main quiz scoreing component was out of sync with the end screen congratulations score that is dynamically pulled usign a template literal. This only occurs when the player gets the last question right, meaing the template literal text is one point behind the main score text on the right of the quiz. To fix this the totalCorrectAnswersText variable that pulls the score was added to the endQuiz function to ensure the scores are pulled at the same time and match up.
+   - [Link to commit](https://github.com/Jbachtiger/ci-pp2-quizanaughts/commit/aac8ceed44e34645f950a9d09d2599f769105e48)
+
+3. An error occured with the home button on the contact us page. After further investigation, it turns out the form element was used instead of a input element with a type attribute of button. The form tags were replaced with a single input tag with a button type. This fixed the error.
+   - [Link to commit](https://github.com/Jbachtiger/ci-pp2-quizanaughts/commit/43ed238871add9f4e55f3c8fa385bfed7c4e78be)
+
+
+### Known Bugs
+There are no known bugs left in this project.
+
+## Deployment
+
+This site was deployed to Github pages by following these steps:
+
+1. Login/Signup to Github.
+2. Navigate to relevant Github repository [here](https://github.com/Jbachtiger/ci-pp2-quizanaughts).
+3. Click on the Settings tab, on the navigation menu under the repository name.
+4. Scroll down the menu to the second to last item named "Pages" and click into it.
+5. Under source, choose which branch to deploy. For our purposes choose main branch.
+6. Choose the folder to deploy from, in this case /(root).
+7. Click "Save" and wait for website to deploy. This can take a couple minutes.
+8. Your URL will be display above "Source".
+
+## Credits 
+## Content
+1. The question content for the quiz was sourced from a couple space related quiz websites:
+- [twinkle.co.uk](https://www.twinkl.co.uk/homework-help/science-homework-help/earth-and-space/earth-and-space-quiz-for-kids)
+- [sciencekids.co.nz](https://www.sciencekids.co.nz/quizzes/space.html)
+
+2. The favicon came from [https://favicon.io/](https://favicon.io/)
+
+### Code
+1. Web Dev Simplified - the base code logic for the quiz was amended from his [Youtube](https://www.youtube.com/watch?v=riDzcEQbX6k) tutorial. The code has been modified extensively and extra features/components added to it.
+2. Florin Pop [Youtube](https://www.youtube.com/watch?v=XH5OW46yO8I) video guide. The walkthrough helped create a modal and the code was used and modified for the project.
+
+### Media
+1. All stock images are royalty free and taken from the following sites:
+- [Unsplash](https://unsplash.com/)
+- [Raw Pixel](https://www.rawpixel.com/)
+- [Pixabay](https://pixabay.com/)
+
+Images used:
+- Background for large screens: [Fun kids space](https://www.rawpixel.com/image/3061864/free-illustration-vector-space-colorful-background-kids-school)
+- Background for medium screens: [Space Rocket Night Cartoon](https://pixabay.com/illustrations/space-rocket-night-cartoon-3262811/)
+- Background for small screens: [Spaceman Spaceship Space Astronaught](https://pixabay.com/illustrations/spaceman-spaceship-space-astronaut-4160023/)
+
+
+### Resources
+1. [StackOverflow](https://stackoverflow.com/) - this website was used extensively to broaden my knowledge of Javascript
+2. [CSS Tricks](https://css-tricks.com/) - this website was used to refresh on css concepts
+3. Code Institute Tutor Support - I used tutor support a couple times to help steer me in the right direction to problems I can across with my javascript
+
+### Acknowledgments
+ - My mentor for their support, advice and patience when reviewing this project with me.
+ -  The Code Institute slack community for always being on hand to ask questions and pointing me in the right direction.
+ - My partner, for being so patient with me whilst creating this project and helping me test the quiz.  
