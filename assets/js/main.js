@@ -353,6 +353,13 @@ function showQuestion() {
     });
 }
 
+// Score incremantation
+function incrementScore() {
+    score++;
+    totalCorrectAnswersText.innerText = `Score ${score}`;
+}
+
+
 /**
  * Resets questions and answers UI to default state each time a new question is set
  */
@@ -382,7 +389,7 @@ function onAnswerClick(event) {
     removeClickListenersFromButtons(answerButton);
     if (correct) {
         selectedButton.style.backgroundColor = "green";
-        score++;
+        incrementScore();
     } else {
         selectedButton.style.backgroundColor = "red";
     }
