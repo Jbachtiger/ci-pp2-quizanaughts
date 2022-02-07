@@ -1,13 +1,3 @@
-// Prepopulating form fields
-let fname = document.getElementById("name");
-fname.value = "John Bachtiger";
-
-let email = document.getElementById("email");
-email.value = "jbachtiger@gmail.com";
-
-let comments = document.getElementById("more-info");
-comments.value = "Please let us know how we can help and what you thought of the quiz!";
-
 // Handling form submission
 let contactForm = document.getElementById("contact-form");
 contactForm.addEventListener('submit', formSubmit);
