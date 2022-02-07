@@ -297,7 +297,6 @@ function startGame() {
     score = 0;
     progressBarCounter = 0;
     nextQuestion();
-    initTimer();
 }
 
 /**
@@ -305,6 +304,7 @@ function startGame() {
  */
 function nextQuestion() {
     refreshUIForNextQuestion();
+    initTimer();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
     progressBarCounter++;
     questionCounterText.innerText = `Question: ${currentQuestionIndex + 1}/${maxQuestions}`;
@@ -317,7 +317,8 @@ function nextQuestion() {
  * This function calls the countdown timer and shows an alert once the timer has reached 0
  */
 function initTimer() {
-    let timeleft = 120;
+    let timeleft = 60;
+    clearInterval(quizTimerRef);
     document.getElementById("timer").textContent = `Time: ${timeleft} sec`;
     quizTimerRef = setInterval(function() {
         timeleft--;
