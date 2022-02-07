@@ -280,7 +280,6 @@ let score;
 let progressBarCounter;
 let quizTimerRef;
 
-
 // Intro text for quiz
 welcomeHeading.innerText = "Are you ready space adventurers?";
 welcomeIntro.innerText = "It's time for you to devle deep into space and put your knowledge to the test. Good luck!";
@@ -290,13 +289,6 @@ nextButton.addEventListener("click", () => {
     currentQuestionIndex++;
     nextQuestion();
 });
-
-/**
- * Calls startGame function
- */
-function beginQuiz() {
-    startGame();
-}
 
 /**
  * Runs the main game loop

@@ -15,12 +15,12 @@ closeButtonInModal.addEventListener("click", () => {
 });
 
 // // Contact us button
-document.getElementById("contact-btn").onclick = function() {
+contactUsButton.onclick = function() {
     location.href = "contact.html";
 };
 
 // Home button
-document.getElementById("home-btn").onclick = function() {
+homeButton.onclick = function() {
     location.href = "index.html";
 };
 
