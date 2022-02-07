@@ -2,27 +2,31 @@
 const openModalButton = document.getElementById("open-modal-button");
 const howToModalContainer = document.getElementById("how-to-modal-container");
 const closeButtonInModal = document.getElementById("close");
-const startButton = document.getElementById("start-btn");
-const contactUsButton = document.getElementById("contact-btn");
-const homeButton = document.getElementById("home-btn");
 
 openModalButton.addEventListener("click", () => {
     howToModalContainer.classList.add("show");
+
 });
 
 closeButtonInModal.addEventListener("click", () => {
     howToModalContainer.classList.remove("show");
 });
 
+const startButton = document.getElementById("start-btn");
+const contactUsButton = document.getElementById("contact-btn");
+const welcomeHeading = document.getElementById("welcome-heading");
+const welcomeIntro = document.getElementById("welcome-intro");
+
 // // Contact us button
 contactUsButton.onclick = function() {
     location.href = "contact.html";
 };
 
-// Home button
-homeButton.onclick = function() {
-    location.href = "index.html";
+// Start Game
+startButton.onclick = function() {
+    location.href = "game.html";
 };
 
-//Click event to start game
-startButton.addEventListener("click", startGame);
+// Intro text for quiz
+welcomeHeading.innerText = "Are you ready space adventurers?";
+welcomeIntro.innerText = "It's time for you to devle deep into space and put your knowledge to the test. Good luck!";

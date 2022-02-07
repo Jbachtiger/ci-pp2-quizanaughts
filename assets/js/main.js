@@ -265,13 +265,13 @@ const questionCounterText = document.getElementById("question-counter");
 const totalCorrectAnswersText = document.getElementById("score-tally");
 const maxQuestions = 15;
 const innerProgressBar = document.getElementById("inner-progress-bar");
-const outerProgressBar = document.getElementById("outer-progress-bar");
-const countDownTimer = document.getElementById("timer");
 const welcomeHeading = document.getElementById("welcome-heading");
 const welcomeIntro = document.getElementById("welcome-intro");
 const congratulationsHeading = document.getElementById("congratulations-heading");
 const outroText = document.getElementById("outro-text");
 const outroContainer = document.getElementById("outro-container");
+const homeButton = document.getElementById("home-btn");
+const restartButton = document.getElementById('restart-btn');
 
 // Declared let variables
 let shuffledQuestions;
@@ -280,38 +280,22 @@ let score;
 let progressBarCounter;
 let quizTimerRef;
 
-// Intro text for quiz
-welcomeHeading.innerText = "Are you ready space adventurers?";
-welcomeIntro.innerText = "It's time for you to devle deep into space and put your knowledge to the test. Good luck!";
-
 // Click event for next button to increment to next question
 nextButton.addEventListener("click", () => {
     currentQuestionIndex++;
     nextQuestion();
 });
 
+startGame();
+
 /**
  * Runs the main game loop
  */
 function startGame() {
-    startButton.classList.add("hide");
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     score = 0;
     progressBarCounter = 0;
-    openModalButton.classList.add("hide");
-    contactUsButton.classList.add("hide");
-    homeButton.classList.add("hide");
-    welcomeHeading.classList.add("hide");
-    welcomeIntro.classList.add("hide");
-    outroContainer.classList.add("hide");
-    nextButton.classList.remove("hide");
-    quizQuestions.classList.remove("hide");
-    answerButtons.classList.remove("hide");
-    questionCounterText.classList.remove("hide");
-    totalCorrectAnswersText.classList.remove("hide");
-    outerProgressBar.classList.remove("hide");
-    countDownTimer.classList.remove("hide");
     nextQuestion();
     initTimer();
 }
@@ -340,11 +324,11 @@ function initTimer() {
         document.getElementById("timer").textContent = `Time: ${timeleft} sec`;
         if (timeleft <= 0) {
             alert(`Oh no! You've run out of time. You scored ${score}/${maxQuestions}. Why not play again and see if you can finish the quiz!`);
-            startButton.innerText = "Play Again";
-            startButton.addEventListener("click", startButton);
-            startButton.classList.remove("hide");
+            restartButton.classList.remove("hide");
+            restartButton.onclick = function() {
+                location.href = "game.html";
+            };
             nextButton.classList.add("hide");
-            homeButton.classList.remove('hide');
             quizQuestions.classList.add('hide');
             clearInterval(quizTimerRef);
         }
@@ -406,10 +390,14 @@ function onAnswerClick(event) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove("hide");
     } else {
-        startButton.innerText = "Play Again";
-        startButton.addEventListener("click", startButton);
-        startButton.classList.remove("hide");
+        restartButton.classList.remove("hide");
+        restartButton.onclick = function() {
+            location.href = "game.html";
+        };
         homeButton.classList.remove("hide");
+        homeButton.onclick = function() {
+            location.href = "index.html";
+        };
         clearInterval(quizTimerRef);
         endQuiz();
     }
