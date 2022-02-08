@@ -265,13 +265,11 @@ const questionCounterText = document.getElementById("question-counter");
 const totalCorrectAnswersText = document.getElementById("score-tally");
 const maxQuestions = 15;
 const innerProgressBar = document.getElementById("inner-progress-bar");
-const welcomeHeading = document.getElementById("welcome-heading");
-const welcomeIntro = document.getElementById("welcome-intro");
 const congratulationsHeading = document.getElementById("congratulations-heading");
 const outroText = document.getElementById("outro-text");
 const outroContainer = document.getElementById("outro-container");
 const homeButton = document.getElementById("home-btn");
-const restartButton = document.getElementById('restart-btn');
+const restartButton = document.getElementById("restart-btn");
 
 // Declared let variables
 let shuffledQuestions;
@@ -286,7 +284,7 @@ nextButton.addEventListener("click", () => {
     nextQuestion();
 });
 
-// Starts game
+// Calls start game function and starts the quiz
 startGame();
 
 /**
@@ -310,7 +308,7 @@ function nextQuestion() {
     progressBarCounter++;
     questionCounterText.innerText = `Question: ${currentQuestionIndex + 1}/${maxQuestions}`;
     totalCorrectAnswersText.innerText = `Score ${score}`;
-    // Updated progress bar
+    // Progress bar - calculates segment width to add and updates on each new question
     innerProgressBar.style.width = `${(progressBarCounter / maxQuestions) * 100}%`;
 }
 
@@ -335,7 +333,7 @@ function initTimer() {
                 location.href = "index.html";
             };
             nextButton.classList.add("hide");
-            quizQuestions.classList.add('hide');
+            quizQuestions.classList.add("hide");
             clearInterval(quizTimerRef);
         }
     }, 1000);
@@ -359,12 +357,13 @@ function showQuestion() {
     });
 }
 
-// Score incremantation
+/**
+ * Increments score
+ */
 function incrementScore() {
     score++;
     totalCorrectAnswersText.innerText = `Score ${score}`;
 }
-
 
 /**
  * Resets questions and answers UI to default state each time a new question is set
@@ -386,7 +385,7 @@ function removeClickListenersFromButtons(buttons) {
 }
 
 /*
-Checks to see if player has selected correct or wrong answer, changes button colour depeding on the result.
+Checks to see if player has selected correct or wrong answer, changes button colour depending on the result
 */
 function onAnswerClick(event) {
     const selectedButton = event.target;
@@ -399,7 +398,7 @@ function onAnswerClick(event) {
     } else {
         selectedButton.style.backgroundColor = "red";
     }
-    // Checks to see if player is on last question and if so gives them a play again option
+    // Checks to see if player is on last question and if so shows play again and home buttons
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove("hide");
     } else {
@@ -425,6 +424,6 @@ function endQuiz() {
     quizQuestions.classList.add("hide");
     outroContainer.classList.remove("hide");
     congratulationsHeading.innerText = `Congratulations, you scored ${score}!`;
-    outroText.innerText = "Well done for completing the quiz. We hoped you enjoyed testing out your knowledge.";
+    outroText.innerText = "We hoped you enjoyed testing out your space knowledge.";
     outroContainer.classList.remove("hide");
 }

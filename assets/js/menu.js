@@ -5,7 +5,6 @@ const closeButtonInModal = document.getElementById("close");
 
 openModalButton.addEventListener("click", () => {
     howToModalContainer.classList.add("show");
-
 });
 
 closeButtonInModal.addEventListener("click", () => {
