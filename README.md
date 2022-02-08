@@ -278,7 +278,7 @@ The official W3C Markup Validator was used to validate both the html and css of 
 3. [JSHint](https://jshint.com/) - Javascript Code Quality Tool
 - Having run all my javascript code through the JSHint tool, no errors were detected
 
-![JSHint](docs/testing-and-validation/jshint.png)
+[JSHint Code Results](docs/testing-and-validation/jshint.png)
 
 
 ### Colour Contrast Checks
