@@ -126,11 +126,15 @@ __First Time Visitor Goals__
   - The contact button is the last button on the game menu and once clicked takes the player to a dedicated page which has a form on it
   - The form has been designed to be as short as possible, with only 3 fields to input (name, email and comments) and provides a way for the players to provice feedback
   - The form has box shadowing on it and a black border around the input fields to make them stand out
-  - The form uses javascript to pre-populate information and on submit instead of the user being sent to the designated action URL as message displays to thank the player for their message and that a memeber of the team will get back to them shortly
+  - The form uses placeholder text to prompt the user to fill out the fields and provide them with an example of what should be inputted
+  - The form uses javascript once a user has clicked the submit button to display their details and message they have just inputted below the submit button
+  - This feedback is provided insteat of an action URL being sent and also thanks the player for their message and informs them that a member of the team will get back to them shortly
 
   ![Contact Button](docs/feature-screenshots/contact-button.png)
 
   ![Form](docs/feature-screenshots/form.png)
+
+  ![Form JS Feedback](docs/feature-screenshots/form-js-feedback.png)
 
 - __Main Quiz__
  -  The is the main quiz section that has all the questions and answers related to space
@@ -175,10 +179,17 @@ __First Time Visitor Goals__
 
    - __Countdown Timer__
 
-  - The question counter has been added to the main game quiz to add a bit more of a challenge element to the quiz and make it more enjoyable and rewarding to complete.
-  - It counts down in seconds and gives the user 120 second to complete the who quiz. If the user doesn't manage this a play again option is displayed which resets the quiz for them to try again.
+  - The question counter has been added to the main game quiz to add a bit more of a challenge element to the quiz and make it more enjoyable and rewarding to complete
+  - It counts down in seconds and gives the user 60 seconds to completed each question 
+  - The timer is automatically refreshed on each new question
+  - If the user doesn't manage to complete an answer in time an alert message will pop up and a play again and home button will be displayed
+  - This will allow the player to either play again which resets the whole quiz or go to the home menu
 
   ![Countdown Timer](docs/feature-screenshots/countdown-timer.png)
+
+  ![Alert Message](docs/feature-screenshots/alert-message.png)
+
+  ![Try Again Screen](docs/feature-screenshots/try-again-screen.png)
 
   ### Future Development
 - Currently the form doesn't POST the users data to anywhere as i've not learned how to do this yet. In future, I would like to like this up properly
@@ -271,6 +282,8 @@ I have checked the color contrast of all the pages on the website including inde
 
 ![Colour Contrast Report - Index Page](docs/testing-and-validation/colour-contrast-checker-index-page.png)
 
+![Colour Contrast Report - Index Page](docs/testing-and-validation/colour-contrast-checker-game-page.png)
+
 ![Colour Contrast Report - Contact Us Page](docs/testing-and-validation/colour-contrast-checker-contact-page.png)
 
 ### Lighthouse Tool
@@ -284,6 +297,12 @@ I have used the Chrome Lighthouse tool to run a test and audit the entire websit
  - Mobile  
 ![Mobile Report](docs/testing-and-validation/lighthouse-audit-index-page-mobile.png)
 
+- game.html
+  - Desktop  
+![Desktop Report](docs/testing-and-validation/lighthouse-audit-game-page-desktop.png)
+
+ - Mobile  
+![Mobile Report](docs/testing-and-validation/lighthouse-audit-game-page-mobile.png)
 
 - contact.html
   - Desktop  
@@ -343,12 +362,12 @@ Images used:
 - Background for large screens: [Fun kids space](https://www.rawpixel.com/image/3061864/free-illustration-vector-space-colorful-background-kids-school)
 - Background for medium screens: [Space Rocket Night Cartoon](https://pixabay.com/illustrations/space-rocket-night-cartoon-3262811/)
 - Background for small screens: [Spaceman Spaceship Space Astronaught](https://pixabay.com/illustrations/spaceman-spaceship-space-astronaut-4160023/)
-
+- Favicon: [Rocket Ship](https://pixabay.com/vectors/rocket-space-ship-space-launch-312767/)
 
 ### Resources
-1. [StackOverflow](https://stackoverflow.com/) - this website was used extensively to broaden my knowledge of Javascript
+1. [StackOverflow](https://stackoverflow.com/) - this website was used to broaden my knowledge of Javascript
 2. [CSS Tricks](https://css-tricks.com/) - this website was used to refresh on css concepts
-3. Code Institute Tutor Support - I used tutor support a couple times to help steer me in the right direction to problems I can across with my javascript
+3. Code Institute Tutor Support - I used tutor support a couple times to help steer me in the right direction for problems I came across with my javascript
 
 ### Acknowledgments
  - My mentor for their support, advice and patience when reviewing this project with me.
