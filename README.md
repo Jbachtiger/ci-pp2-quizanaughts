@@ -275,7 +275,11 @@ The official W3C Markup Validator was used to validate both the html and css of 
 - Validate css style for [index.html](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjbachtiger.github.io%2Fci-pp2-quizanaughts%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - Validate css style for [contact.html](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjbachtiger.github.io%2Fci-pp2-quizanaughts%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-3. JSHint [https://jshint.com/]()
+3. [JSHint](https://jshint.com/) - Javascript Code Quality Tool
+- Having run all my javascript code through the JSHint tool, no errors were detected
+
+![JSHint](docs/testing-and-validation/jshint.png)
+
 
 ### Colour Contrast Checks
 I have checked the color contrast of all the pages on the website including index and contact page using the Color Contrast Accessibility Validator by a11y. This ensured that best practise is followed regarding accessibility and maximised readability of the website. The results are shown below.
