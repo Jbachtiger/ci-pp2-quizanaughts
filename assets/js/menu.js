@@ -22,11 +22,11 @@ contactUsButton.onclick = function() {
     location.href = "contact.html";
 };
 
-// Start Game
+// Start Game - opens game.html page on click
 startButton.onclick = function() {
     location.href = "game.html";
 };
 
 // Intro text for quiz
 welcomeHeading.innerText = "Are you ready space adventurers?";
-welcomeIntro.innerText = "It's time for you to devle deep into space and put your knowledge to the test. Good luck!";
+welcomeIntro.innerText = "Put your wits and knowledge to the test and play the Quizanaughts space quiz. Good luck!";

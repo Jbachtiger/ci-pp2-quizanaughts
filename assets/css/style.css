@@ -63,6 +63,7 @@ a {
 #welcome,
 #outro-container {
     width: 400px;
+    padding-bottom: 10px;
 }
 
 /* Score tracking and question counter area */

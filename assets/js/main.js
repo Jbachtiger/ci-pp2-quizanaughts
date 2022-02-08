@@ -254,7 +254,7 @@ const questions = [{
     },
 ];
 
-// Quiz code - Credit Web Dev Simplified - base code logic amended from his tutorial, code has been modified and extra features/components added to it.
+// Quiz code - Credit Web Dev Simplified - base code logic amended from his youtube tutorial, code has been modified and extra features/components added to it.
 
 //Declared constant variables
 const nextButton = document.getElementById("next-btn");
@@ -286,6 +286,7 @@ nextButton.addEventListener("click", () => {
     nextQuestion();
 });
 
+// Starts game
 startGame();
 
 /**
@@ -328,6 +329,10 @@ function initTimer() {
             restartButton.classList.remove("hide");
             restartButton.onclick = function() {
                 location.href = "game.html";
+            };
+            homeButton.classList.remove("hide");
+            homeButton.onclick = function() {
+                location.href = "index.html";
             };
             nextButton.classList.add("hide");
             quizQuestions.classList.add('hide');
