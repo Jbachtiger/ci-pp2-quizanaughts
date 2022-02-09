@@ -1,8 +1,8 @@
-# PP2 - Javascript Essentials - Quizanaughts
+# PP2 - JavaScript Essentials - Quizanaughts
 
-Quizanaughts is an interactive quiz site designed to be fun and educational for 9-13 year old children, providing a way to test their space knowledge. It's purpose is to cover a wide variety of space questions to help the user test their knowledge in an interactive way. A compeitive component has been added by including a scoring system and timer to make it more fun and challenging. This quiz is a great educational tool as well as a way to create awareness about space and inspire future generations about the marvels of space and our universe.  
+Quizanaughts is an interactive quiz site designed to be fun and educational for 9-13 year old children, providing a way to test their space knowledge. Its purpose is to cover a wide variety of space questions to help the user test their knowledge in an interactive way. A competitive component has been added by including a scoring system and timer to make it more fun and challenging. This quiz is a great educational tool as well as a way to create awareness about space and inspire future generations about the marvels of space and our universe.  
 
-![Responsive Mockup](docs/mockups/responsive-mockups.png)
+![Responsive Mock-up](docs/mockups/responsive-mockups.png)
 
 ## Live Site
 
@@ -25,7 +25,7 @@ Quizanaughts is an interactive quiz site designed to be fun and educational for 
 
 - [Technologies Used](#technologies-used)
   - [Languages Used](#languages-used)
-  - [Frameworks, Libaries and Programs Used](#frameworks-libaries-and-programs-used)
+  - [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
 
 - [Testing](#testing)
   - [Browser and Device Testing](#browser-and-device-testing)
@@ -57,12 +57,12 @@ __Business Owner Goals__
 - As a site owner I want the children and players to have fun
 - As a site owner I want the children and players to learn
 - As a site owner I want the children and players to explore the topic of space
-- As a site owner I want the children and players to provide feeback on quiz
+- As a site owner I want the children and players to provide feedback on quiz
 - As a site owner I want to encourage children to take up the sciences and become curious  
       
 __First Time Visitor Goals__
 - As a first time visitor I want to find out what type of quiz it is
-- As a first time visitor I want to find out how to play th quiz
+- As a first time visitor I want to find out how to play the quiz
 - As a first time visitor I want be able to play the quiz quickly and easily
 - As a first time visitor I want to be able to give feedback on the website easily 
 
@@ -72,14 +72,14 @@ __First Time Visitor Goals__
 
 ## Design
 ### Colour Scheme
-- The colour scheme has been carefully chosen to ensure accessability for all
-- The colours compliment each other to ensure a good contrast ratio
+- The colour scheme has been carefully chosen to ensure accessibility for all
+- The colours complement each other to ensure a good contrast ratio
 - The colours used provide a fun, colourful and child friendly look to the website
-- The main colours used on the website are green, blue, white and orange inlcuding varying shades
+- The main colours used on the website are green, blue, white and orange including varying shades
 - Hex codes for colours: #c3fc95 (Light Green), #add8e6 (Light Blue), #ffffff (White), #000000 (Black) and #FFA500 (Orange)
 
 ### Backgrounds
- - The website uses cartoony style space backgrounds throughtout to appeal to children and get them excited about the quiz
+ - The website uses cartoony style space backgrounds throughout to appeal to children and get them excited about the quiz
  - There are three different backgrounds in use for varying screen sizes
 
 ### Typography
@@ -124,10 +124,10 @@ __First Time Visitor Goals__
 - __Contact Button and Form__ 
 
   - The contact button is the last button on the game menu and once clicked takes the player to a dedicated page which has a form on it
-  - The form has been designed to be as short as possible, with only 3 fields to input (name, email and comments) and provides a way for the players to provice feedback
+  - The form has been designed to be as short as possible, with only 3 fields to input (name, email and comments) and provides a way for the players to provide feedback
   - The form has box shadowing on it and a black border around the input fields to make them stand out
   - The form uses placeholder text to prompt the user to fill out the fields and provide them with an example of what should be inputted
-  - The form uses javascript once a user has clicked the submit button to display their details and message they have just inputted below the submit button
+  - The form uses JavaScript once a user has clicked the submit button to display their details and message they have just inputted below the submit button
   - This feedback is provided instead of an action URL being sent and also thanks the player for their message and informs them that a member of the team will get back to them shortly
   - There is a home button below the submit button to take the user back to the main menu
 
@@ -149,7 +149,7 @@ __First Time Visitor Goals__
 
 - __End Page For Quiz__
  - This is the section of the quiz that is displayed once the last question has been answered
- - It shows a congratulations message and dynamically inputs the score the user has achived
+ - It shows a congratulations message and dynamically inputs the score the user has achieved
  - It also displays a home and play again button
 
   ![End Page For Quiz](docs/feature-screenshots/end-quiz-page.png)
@@ -173,7 +173,7 @@ __First Time Visitor Goals__
 - __Score__
 
   - The score system works on a one point per correct question basis
-  - As you progress through the quiz the score is automtically updated in realtime as more and more correct questions are answered
+  - As you progress through the quiz the score is automatically updated in real-time as more and more correct questions are answered
   - A score feature was added to bring more interactivity, increase the fun element and encourage healthy competition
 
    ![Score](docs/feature-screenshots/score.png)
@@ -193,8 +193,8 @@ __First Time Visitor Goals__
   ![Try Again Screen](docs/feature-screenshots/try-again-screen.png)
 
   ### Future Development
-- Currently the form doesn't POST the users data to anywhere as i've not learned how to do this yet. This is something I would like to develop in the future
-- Create a high score table with the ability for the player to input their username which saves their individal scores
+- Currently the form doesn't POST the users data to anywhere as I've not learned how to do this yet. This is something I would like to develop in the future
+- Create a high score table with the ability for the player to input their username which saves their individual scores
 - Add audio feedback when questions are answered, using different sounds for correct or wrong answers
 - Create multiple levels where the questions get harder the higher the level
 - Create a resources page that provides lots more educational reading around the topic of space 
@@ -207,31 +207,31 @@ __First Time Visitor Goals__
 
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-### Frameworks, Libaries and Programs Used
+### Frameworks, Libraries and Programs Used
 - [Gitpod](https://gitpod.io/projects) - this was my code editor for this project
-- [Git](https://git-scm.com/) - was used for version control using the terminal through Gitpod to commit to Git and push to Github
-- [Github](https://github.com/) - is used to store the code for this project after being pushed from Git
+- [Git](https://git-scm.com/) - was used for version control using the terminal through Gitpod to commit to Git and push to GitHub
+- [GitHub](https://github.com/) - is used to store the code for this project after being pushed from Git
 - [Balsamiq](https://balsamiq.com/) - was used to create the wireframes during the design process
 - [Google Fonts](https://fonts.google.com/) - used to import fonts to website
 - [TinyPNG](https://tinypng.com/) - used to compress images
 - [Canva](https://www.canva.com/) - used to edit and resize background images
-- [GoogleDev Tools](https://developer.chrome.com/docs/devtools/) - was used to help investigate issues with code and visually see what code was related to which area on the page. The console function was also used for Javascript
-- [Techsini](http://techsini.com/multi-mockup/index.php) - was used to generate multi-device website mockups
+- [GoogleDev Tools](https://developer.chrome.com/docs/devtools/) - was used to help investigate issues with code and visually see what code was related to which area on the page. The console function was also used for JavaScript
+- [Techsini](http://techsini.com/multi-mockup/index.php) - was used to generate multi-device website mock-ups
 - [ColorSpace](https://mycolor.space/?hex=%23ADD8E6&sub=1) - used to generate colour pallets for use on website
 - [a11y](https://color.a11y.com/) - used to check website colour contrast and accessibility
 - [Fireshot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg?hl=en) - this was a Google chrome extension used to take screenshots
 - [HTML Formatter](https://webformatter.com/html) - used to double check all Javascript, HTML and CSS code was formatted correctly
 
 ## Testing 
-- The main focus of the testing is on Javascript, HTML and CSS as these are the three languages that were used to create the quiz and static web pages
+- The main focus of the testing is on JavaScript, HTML and CSS as these are the three languages that were used to create the quiz and static web pages
 - The testing carried out ensures that the functionality and visual aspects of the website all work as intended
-- Testing will be done using numerous devices and browsers, ensuring all UX is to a high standard as well as testing the websites accessibility, SEO and validation
+- Testing will be done using numerous devices and browsers', ensuring all UX is to a high standard as well as testing the websites accessibility, SEO and validation
 - I have checked the following:
 
-  - The overall website navigational experience, ensuring the main quiz UI is easy to use, there's  a clear logic flow to the menu and all pages can be accessed quickly
+  - The overall website navigational experience, ensuring the main quiz UI is easy to use, there's a clear logic flow to the menu and all pages can be accessed quickly
   - All internal links and modals work correctly
-  - All forms are working as expected including script checks e.g. if a user fills in a mandatory field in a form an error message is shown, js code runs correctly on the form and returns expected values, optimally formatted for better readability
-  - All JS code is being executed without any errors, the main quiz game is working as it should be as well as all of its extra features
+  - All forms are working as expected including script checks e.g. if a user fills in a mandatory field in a form an error message is shown, JS code runs correctly on the form and returns expected values, optimally formatted for better readability
+  - All JS code is being executed without any errors; the main quiz game is working as it should be as well as all of its extra features
   - Contrast checks should report no errors
   - Validation checks for HTML and CSS should report no errors 
   - Lighthouse test scores should be high (within 90-100 range)
@@ -239,13 +239,13 @@ __First Time Visitor Goals__
 
 ### Browser and Device Testing
 __Browsers__
-- I have tested the website across the four major browsers including Goolge Chrome, Firefox, Microsoft Edge and Safari
-- For each browser, functionality was tested including all quiz features that were built using Javascript, and the responsive design
-- The website performed as intended and the responsive design and quiz functoins were checked using developer tools across multiple devices with structural integrity holding for the various sizes and no errors occuring
+- I have tested the website across the four major browsers including Google Chrome, Firefox, Microsoft Edge and Safari
+- For each browser, functionality was tested including all quiz features that were built using JavaScript, and the responsive design
+- The website performed as intended and the responsive design and quiz functions were checked using developer tools across multiple devices with structural integrity holding for the various sizes and no errors occurring
 
 __Devices Tested__
 The website was viewed on a variety of devices and screen sizes including:
-- Windows 8.1 Desktop (screen resoultions tested in 2560x1080 and 1920x1080)
+- Windows 8.1 Desktop (screen resolutions tested in 2560x1080 and 1920x1080)
 - Macbook Pro (13 inch 2015 version)
 - Moto G4
 - Galaxy S5
@@ -264,7 +264,7 @@ The website was viewed on a variety of devices and screen sizes including:
 A large amount of testing was done to ensure all features of the quiz worked correctly, buttons worked and forms submitted as intended. Family members and the Code Institute Slack community was asked to review the website to point out any bugs or user experience issues.
 
 ### W3C and JSHint Validators
-The official W3C Markup Validator was used to validate both the html and css of the project to ensure there were no syntax errors within the site. The JSHint code quality checker was used to ensure no errors were present within the javascript code. The links to the results for each html page, css stylesheet and javascript script are below.
+The official W3C Markup Validator was used to validate both the HTML and CSS of the project to ensure there were no syntax errors within the site. The JSHint code quality checker was used to ensure no errors were present within the JavaScript code. The links to the results for each HTML page, CSS stylesheet and JavaScript script are below.
 
 1. W3C HTML Markup Validator
 
@@ -273,17 +273,17 @@ The official W3C Markup Validator was used to validate both the html and css of 
 
 2. W3C CSS Markup Validator 
 
-- Validate css style for [index.html](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjbachtiger.github.io%2Fci-pp2-quizanaughts%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-- Validate css style for [contact.html](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjbachtiger.github.io%2Fci-pp2-quizanaughts%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- Validate CSS style for [index.html](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjbachtiger.github.io%2Fci-pp2-quizanaughts%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- Validate CSS style for [contact.html](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjbachtiger.github.io%2Fci-pp2-quizanaughts%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-3. [JSHint](https://jshint.com/) - Javascript Code Quality Tool
-- Having run all my javascript code through the JSHint tool, no errors were detected
+3. [JSHint](https://jshint.com/) - JavaScript Code Quality Tool
+- Having run all my JavaScript code through the JSHint tool, no errors were detected
 
 - [JSHint Code Results](docs/testing-and-validation/jshint.png)
 
 
 ### Colour Contrast Checks
-I have checked the color contrast of all the pages on the website including index, game and contact using the Color Contrast Accessibility Validator by a11y. This ensured that best practise is followed regarding accessibility and maximised readability of the website. The results are shown below.
+I have checked the colour contrast of all the pages on the website including index, game and contact using the Color Contrast Accessibility Validator by a11y. This ensured that best practise is followed regarding accessibility and maximised readability of the website. The results are shown below.
 
 ![Colour Contrast Report - Index Page](docs/testing-and-validation/colour-contrast-checker-index-page.png)
 
@@ -316,16 +316,16 @@ I have used the Chrome Lighthouse tool to run a test and audit the entire websit
  - Mobile  
 ![Mobile Report](docs/testing-and-validation/lighthouse-audit-contact-page-mobile.png)
 
-All pages have recieved a score no lower than 99 on all 4 categories of performance, accessibility, best practice and SEO showing it is well optimised. 
+All pages have received a score no lower than 99 on all 4 categories of performance, accessibility, best practice and SEO showing it is well optimised. 
 
 ### Solved Bugs
 1. The countdown timer text had a load delay when the begin quiz button was clicked. This offered poor user experience and as such needed to be fixed. This was achieved by adding the template literals code that was calling the timer text and countdown before the quizTimerRef set interval was called.
    - [Link to commit](https://github.com/Jbachtiger/ci-pp2-quizanaughts/commit/b56ce0e29d63bb2d16c5f7495e3a35269ea63a23)
 
-2. The main quiz scoring component was out of sync with the end screen congratulations score that is dynamically pulled usign a template literal. This only occurs when the player gets the last question right, meaning the template literal text is one point behind the main score text on the right of the quiz. To fix this the totalCorrectAnswersText variable that pulls the score was added to the endQuiz function to ensure the scores are pulled at the same time and match up.
+2. The main quiz scoring component was out of sync with the end screen congratulations score that is dynamically pulled using a template literal. This only occurs when the player gets the last question right, meaning the template literal text is one point behind the main score text on the right of the quiz. To fix this the totalCorrectAnswersText variable that pulls the score was added to the endQuiz function to ensure the scores are pulled at the same time and match up.
    - [Link to commit](https://github.com/Jbachtiger/ci-pp2-quizanaughts/commit/aac8ceed44e34645f950a9d09d2599f769105e48)
 
-3. An error occured with the home button on the contact us page. After further investigation, it turns out the form element was used instead of a input element with a type attribute of button. The form tags were replaced with a single input tag with a button type. This fixed the error.
+3. An error occurred with the home button on the contact us page. After further investigation, it turns out the form element was used instead of a input element with a type attribute of button. The form tags were replaced with a single input tag with a button type. This fixed the error.
    - [Link to commit](https://github.com/Jbachtiger/ci-pp2-quizanaughts/commit/43ed238871add9f4e55f3c8fa385bfed7c4e78be)
 
 
@@ -334,10 +334,10 @@ There are no known bugs left in this project.
 
 ## Deployment
 
-This site was deployed to Github pages by following these steps:
+This site was deployed to GitHub pages by following these steps:
 
-1. Login/Signup to Github.
-2. Navigate to relevant Github repository [here](https://github.com/Jbachtiger/ci-pp2-quizanaughts).
+1. Login/Signup to GitHub.
+2. Navigate to relevant GitHub repository [here](https://github.com/Jbachtiger/ci-pp2-quizanaughts).
 3. Click on the Settings tab, on the navigation menu under the repository name.
 4. Scroll down the menu to the second to last item named "Pages" and click into it.
 5. Under source, choose which branch to deploy. For our purposes choose main branch.
@@ -354,8 +354,8 @@ This site was deployed to Github pages by following these steps:
 2. The favicon came from [https://favicon.io/](https://favicon.io/)
 
 ### Code
-1. Web Dev Simplified - the base code logic for the quiz was amended from his [Youtube](https://www.youtube.com/watch?v=riDzcEQbX6k) tutorial. The code has been extensively modified and extra features/components added to it.
-2. Florin Pop [Youtube](https://www.youtube.com/watch?v=XH5OW46yO8I) video guide. The walkthrough helped me create a modal and the code was used and modified for the project.
+1. Web Dev Simplified - the base code logic for the quiz was amended from his [YouTube](https://www.youtube.com/watch?v=riDzcEQbX6k) tutorial. The code has been extensively modified and extra features/components added to it.
+2. Florin Pop [YouTube](https://www.youtube.com/watch?v=XH5OW46yO8I) video guide. The walkthrough helped me create a modal and the code was used and modified for the project.
 
 ### Media
 1. All stock images are royalty free and taken from the following sites:
@@ -370,9 +370,9 @@ Images used:
 - Favicon: [Rocket Ship](https://pixabay.com/vectors/rocket-space-ship-space-launch-312767/)
 
 ### Resources
-1. [StackOverflow](https://stackoverflow.com/) - this website was used to broaden my knowledge of Javascript
+1. [Stack Overflow](https://stackoverflow.com/) - this website was used to broaden my knowledge of JavaScript
 2. [CSS Tricks](https://css-tricks.com/) - this website was used to refresh on css concepts
-3. Code Institute Tutor Support - I used tutor support a couple times to help steer me in the right direction for problems I came across with my javascript
+3. Code Institute Tutor Support - I used tutor support a couple times to help steer me in the right direction for problems I came across with my JavaScript
 
 ### Acknowledgments
  - My mentor for their support, advice and patience when reviewing this project with me

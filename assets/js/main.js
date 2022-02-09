@@ -254,7 +254,7 @@ const questions = [{
     },
 ];
 
-// Quiz code - Credit Web Dev Simplified - base code logic amended from his youtube tutorial, code has been modified and extra features/components added to it.
+// Quiz code - Credit Web Dev Simplified - base code logic amended from his YouTube tutorial, code has been modified and extra features/components added to it
 
 //Declared constant variables
 const nextButton = document.getElementById("next-btn");
