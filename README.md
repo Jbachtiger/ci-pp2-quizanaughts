@@ -269,11 +269,13 @@ The official W3C Markup Validator was used to validate both the HTML and CSS of 
 1. W3C HTML Markup Validator
 
 - [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjbachtiger.github.io%2Fci-pp2-quizanaughts%2F)
+- [game.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjbachtiger.github.io%2Fci-pp2-quizanaughts%2Fgame.html)
 - [contact.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjbachtiger.github.io%2Fci-pp2-quizanaughts%2Fcontact.html)
 
 2. W3C CSS Markup Validator 
 
 - Validate CSS style for [index.html](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjbachtiger.github.io%2Fci-pp2-quizanaughts%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- Validate CSS style for [game.html](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjbachtiger.github.io%2Fci-pp2-quizanaughts%2Fgame.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - Validate CSS style for [contact.html](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjbachtiger.github.io%2Fci-pp2-quizanaughts%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 3. [JSHint](https://jshint.com/) - JavaScript Code Quality Tool
